@@ -176,7 +176,6 @@ import {
 import { SessionsEmpty } from "../../features/sessions/ui/SessionsEmpty";
 import { SidebarUpdateFooter } from "./SidebarUpdate";
 import { SourceControl } from "../../features/source-control/ui/SourceControl";
-import { GithubStarPrompt } from "./GithubStarPrompt";
 import {
   refreshRemoteProjectSessions,
   remoteRequest,
@@ -2090,7 +2089,6 @@ function SidebarComponent({
               onDismissUpdate={onDismissUpdate}
             />
             <div className="flex shrink-0 flex-col gap-px p-2 empty:hidden">
-              <GithubStarPrompt />
               {!compactProjectRail ? (
                 <RailAction
                   label="Settings"
